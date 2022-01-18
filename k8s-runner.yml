@@ -1,0 +1,8 @@
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: Runner
+metadata:
+  name: gitrunner
+  namespace: actions
+spec:
+  repository: henrique-sulimann/gitrunner_kubernetes
