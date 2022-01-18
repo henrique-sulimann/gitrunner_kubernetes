@@ -31,4 +31,4 @@ spec:
     spec:
       containers:
         - name: api-henrique
-          image: hsulimann/prometheus-runner:1.0
+          image: hsulimann/prometheus-runner:1.0.0
