@@ -27,7 +27,7 @@ jobs:
       - name: DockerLogin
         uses: docker/login-action@v1.10.0
         with:
-          username: ${{ secrets.DOCKER_LOGIN }}
+          username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
       - uses: actions/setup-node@v2
         name: Setup Node
