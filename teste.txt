@@ -1,1 +1,0 @@
-testando e estudando o git merge e git rebase
