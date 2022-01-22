@@ -1,25 +1,8 @@
-# ---
-# apiVersion: actions.summerwind.dev/v1alpha1
-# kind: Runner
-# metadata:
-#   name: gitrunner
-#   namespace: actions
-# spec:
-#   repository: henrique-sulimann/gitrunner_kubernetes
-#   env:
-#     - name: RUNNER_LABELS
-#       value: "dev1"
 ---
 apiVersion: actions.summerwind.dev/v1alpha1
-kind: RunnerDeployment
+kind: Runner
 metadata:
   name: gitrunner
   namespace: actions
 spec:
-  replicas: 1
-  template:
-    spec:
-      repository: henrique-sulimann/gitrunner_kubernetes
-      labels:
-        - "dev1"
-        - "dev2"
+  repository: henrique-sulimann/gitrunner_kubernetes
